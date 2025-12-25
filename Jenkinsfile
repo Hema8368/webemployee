@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Git checkout scm') {
       steps {
-        git branch: 'main', url: 'https://github.com/Hema8368/webemployee.git'
+        git branch: 'july', url: 'https://github.com/Hema8368/webemployee.git'
       }
     }
 
