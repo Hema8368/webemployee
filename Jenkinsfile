@@ -9,15 +9,15 @@ pipeline {
     }
 
     stage('Compile the code') {
-      steps { sh 'mvn -B clean compile' }
+      steps { sh 'mvn compile' }
     }
 
     stage('Testing the code') {
-      steps { sh 'mvn -B test' }
+      steps { sh 'mvn test' }
     }
 
     stage('Package the code') {
-      steps { sh 'mvn -B package' }
+      steps { sh 'mvn package' }
     }
 
     stage('Deploy to the tomcat') {
